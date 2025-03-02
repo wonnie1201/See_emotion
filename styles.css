@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 1rem;
+}
+
+header p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.upload-section {
+    margin-bottom: 2rem;
+}
+
+.upload-box {
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #2C3E50;
+    background-color: #f8f9fa;
+}
+
+.upload-icon {
+    width: 64px;
+    margin-bottom: 1rem;
+}
+
+.preview-box {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.preview-box img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+.analyze-btn {
+    display: block;
+    width: 200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.analyze-btn:hover {
+    background-color: #34495E;
+}
+
+.result-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.result-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2C3E50;
+}
+
+.emotion-details {
+    margin-top: 2rem;
+}
+
+.emotion-item {
+    margin-bottom: 1rem;
+}
+
+.emotion-label {
+    display: inline-block;
+    width: 80px;
+    font-weight: 600;
+}
+
+.emotion-bar {
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 12px;
+    transition: width 0.3s ease;
+}
+
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .analyze-btn {
+        width: 100%;
+    }
+} 

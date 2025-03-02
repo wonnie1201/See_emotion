@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감정 분석기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>감정 분석기</h1>
+            <p>당신의 감정을 분석해보세요!</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <div class="upload-box" id="dropZone">
+                    <img src="upload-icon.svg" alt="Upload" class="upload-icon">
+                    <p>이미지를 드래그하거나 클릭하여 업로드하세요</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+                <div class="preview-box" id="imagePreview">
+                    <!-- 업로드된 이미지 미리보기 -->
+                </div>
+            </section>
+
+            <button class="analyze-btn">감정 분석하기</button>
+
+            <section class="result-section">
+                <h2>분석 결과</h2>
+                <div class="emotion-chart">
+                    <!-- 차트가 들어갈 자리 -->
+                </div>
+                <div class="emotion-details">
+                    <div class="emotion-item">
+                        <span class="emotion-label">행복</span>
+                        <div class="emotion-bar">
+                            <div class="bar" style="width: 60%; background-color: #FFD93D;"></div>
+                            <span class="percentage">60%</span>
+                        </div>
+                    </div>
+                    <div class="emotion-item">
+                        <span class="emotion-label">슬픔</span>
+                        <div class="emotion-bar">
+                            <div class="bar" style="width: 20%; background-color: #6C9BCF;"></div>
+                            <span class="percentage">20%</span>
+                        </div>
+                    </div>
+                    <div class="emotion-item">
+                        <span class="emotion-label">분노</span>
+                        <div class="emotion-bar">
+                            <div class="bar" style="width: 20%; background-color: #FF6B6B;"></div>
+                            <span class="percentage">20%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html> 
